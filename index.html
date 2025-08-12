@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Levreweb</title>
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="container">
+              <div class="logo">
+                <a href="./index.html"><img src="./SVG/levreweb-logo-1.svg" alt="Levreweb Logo" class="logo-1"></a>
+                <a href="./index.html"><img src="./SVG/levreweb-logo-2.svg" alt="Levreweb Logo" class="logo-2"></a>
+              </div>
+              <ul class="nav-links" id="navLinks">    
+                  <li><a href="#about">Tentang Kami</a></li>
+                  <li><a href="#services">Layanan Kami</a></li>
+                  <li><a href="./portfolio/index.html">Portofolio</a></li>
+                  <li><a href="./harga/index.html">Paket</a></li>
+                  <li><a href="#contact" class="btn">Hubungi</a></li>
+              </ul>
+              <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="./SVG/hero.svg" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+            <h1><span>Solusi</span> Digitalisasi <br>Bisnis Kamu</h1>
+            <p>Levreweb hadir sebagai tuas digitalisasi untuk UMKM dan bisnis lokal. Kami bantu wujudkan website profesional yang ringan, cepat, dan siap online tanpa ribet.</p>
+            <a href="#contact" class="btn">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="why-us-item">
+                <div><i class="fas fa-store"></i></div>
+                <h3>Fokus Pada Bisnis Lokal</h3>
+                <p>Kami paham kebutuhan bisnis kecil dan menengah, dan kami sesuaikan setiap proyek dengan tujuan bisnis Anda.</p>
+            </div>
+            <div class="why-us-item">
+                <div><i class="fas fa-eye-slash"></i></div>
+                <h3>Tanpa Biaya Tersembunyi</h3>
+                <p>Harga yang jelas, semua sudah termasuk domain dan hosting.</p>
+            </div>
+            <div class="why-us-item">
+                <div><i class="fas fa-bolt"></i></div>
+                <h3>Desain Simpel dan Cepat Dimuat</h3>
+                <p>Tanpa fitur berat yang memperlambat website—kami prioritaskan efisiensi dan kecepatan.</p>
+            </div>
+            <div class="why-us-item">
+                <div><i class="fas fa-magnifying-glass"></i></div>
+                <h3>SEO Friendly Sejak Awal</h3>
+                <p>Website diatur agar lebih mudah ditemukan oleh calon pelanggan Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>Siap Jadi Tuas Digitalmu</h1>
+            <p>Levreweb adalah layanan desain website yang berfokus pada bisnis lokal dan UMKM. Terinspirasi dari filosofi lever (tuas), kami percaya bahwa perubahan besar bisa dimulai dari langkah sederhana, seperti website yang dirancang dengan tepat.</p>
+            <p>Kami mengedepankan pendekatan praktis dan transparan. Tidak ada jargon teknis yang membingungkan, tidak ada fitur yang tidak perlu. Hanya website yang bekerja sesuai kebutuhan bisnismu.</p>
+        </div>
+        <div class="about-image">
+            <img src="./SVG/about.svg" alt="About Image">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-container">
+            <div class="mobile-controls">
+                <div class="controls mobile-prev">
+                    <button onclick="prevService()">&#10094;</button>
+                </div>
+                <div class="controls mobile-next">
+                    <button onclick="nextService()">&#10095;</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="prevService()">&#10094;</button>
+            </div>
+            <div class="service-carousel">
+                <div class="service active">
+                    <div class="service-text">
+                        <h3>Apa yang kami tawarkan?</h3>
+                        <h1>Website Company Profile</h1>
+                        <p>Website profesional untuk memperkenalkan bisnis, produk, atau jasa Anda.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="./SVG/service-1 1.svg" alt="Service Image">
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-text">
+                        <h3>Apa yang kami tawarkan?</h3>
+                        <h1>Landing Page Promosi</h1>
+                        <p>Halaman tunggal yang efektif untuk promosi produk atau kampanye digital.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="./SVG/service-2 1.svg" alt="Service Image">
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-text">
+                        <h3>Apa yang kami tawarkan?</h3>
+                        <h1>Desain Responsif</h1>
+                        <p>Tampilan optimal di semua perangkat: HP, tablet, hingga desktop.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="./SVG/service-3 1.svg" alt="Service Image">
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-text">
+                        <h3>Apa yang kami tawarkan?</h3>
+                        <h1>Optimasi SEO Dasar</h1>
+                        <p>Struktur dan meta dasar agar mudah ditemukan di Google.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="./SVG/service-4 1.svg" alt="Service Image">
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-text">
+                        <h3>Apa yang kami tawarkan?</h3>
+                        <h1>Termasuk Hosting + Domain</h1>
+                        <p>Semua paket sudah termasuk domain .com dan hosting 1 tahun.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="./SVG/service-5 1.svg" alt="Service Image">
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button onclick="nextService()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+     <section class="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="container">
+            <div class="portfolio-item">
+                <a href="https://swiftline-logistic.netlify.app" class="portfolio-click">Click to Visit</a>
+                <a href="https://swiftline-logistic.netlify.app"><img src="./images/swiftline.png" alt="Portfolio Image"></a>
+                <h1>Swiftline</h1>
+                <p>Logistic Company</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://urban-bite.netlify.app" class="portfolio-click">Click to Visit</a>
+                <a href="https://urban-bite.netlify.app"><img src="./images/urbanbite.png" alt="Portfolio Image"></a>
+                <h1>Urbanbite</h1>
+                <p>Cafe</p>
+            </div>
+        </div>
+     </section>
+
+    <!-- Workflow -->
+    <section class="workflow" id="workflow">
+        <h1>Bagaimana Kami Bekerja?</h1>
+        <div class="container">
+            <div class="workflow-item">
+                <div><h1>1</h1></div>
+                <h3>Discovery Call</h3>
+                <p>Kita mulai dengan membahas kebutuhan dan tujuan bisnismu. Ini adalah tahap untuk saling memahami—apa yang ingin kamu capai, siapa target audiensmu, dan gaya visual seperti apa yang kamu suka.</p>
+            </div>
+            <div class="workflow-item">
+                <div><h1>2</h1></div>
+                <h3>Wireframe Concept</h3>
+                <p>Setelah paham kebutuhanmu, kami buat sketsa atau wireframe sederhana untuk menunjukkan struktur dan alur halaman websitemu. Ini jadi fondasi awal sebelum masuk ke tahap desain dan pengembangan.</p>
+            </div>
+            <div class="workflow-item">
+                <div><h1>3</h1></div>
+                <h3>Development & Testing</h3>
+                <p>Wireframe yang telah disetujui akan dikembangkan menjadi website nyata. Kami kerjakan bagian desain, responsivitas, dan optimasi performa. Di akhir fase ini, website akan diuji di berbagai perangkat dan browser.</p>
+            </div>
+            <div class="workflow-item">
+                <div><h1>4</h1></div>
+                <h3>Launch & Support</h3>
+                <p>Setelah semua siap, website akan dipublikasikan secara online menggunakan domain dan hosting yang telah disiapkan. Kami pastikan semuanya berjalan lancar dan akan memaintain websitemu selama 1 tahun hingga perpanjangan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <h1>Pilih Paket untuk Bisnismu</h1>
+        <div class="container">
+            <div class="pricing-item">
+                <div class="pricing-item-content">
+                    <h1>Starter - <span>Free 1 Halaman</span></h1>
+                    <h3>Rp.1.000.000,00</h3>
+                    <h5>Perpanjangan Rp.600.000,00/tahun</h5>
+                    <ul>
+                        <li>
+                            <div class="point">
+                                <h5>Mulai dikenal di dunia digital </h5>
+                                <p>Cukup dari 1 halaman untuk tampil profesional.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Tetap terlihat rapi di semua gadget </h5>
+                                <p>Desain responsif yang mengikuti ukuran layar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Bangun kepercayaan pelanggan </h5>
+                                <p>Tampilkan informasi bisnismu secara meyakinkan.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Tanpa repot urusan teknis</h5>
+                                <p>Domain .com & hosting 1 tahun sudah termasuk.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing-item-button">
+                    <a href="./harga/index.html" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="pricing-item">
+                <div class="pricing-item-content">
+                    <h1>Company Profile - <span>5 Halaman</span></h1>
+                    <h3>Rp.1.500.000,00</h3>
+                    <h5>Perpanjangan Rp.600.000,00/tahun</h5>
+                    <ul>
+                        <li>
+                            <div class="point">
+                                <h5>Tunjukkan citra profesional </h5>
+                                <p>Website yang bicara untuk bisnismu, bukan sekadar hadir.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Konsisten di semua perangkat</h5>
+                                <p>Impresif di HP maupun desktop.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Tanpa repot urusan teknis</h5>
+                                <p>Domain .com & hosting 1 tahun sudah termasuk.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Lihat siapa yang mengunjungi bisnismu </h5>
+                                <p>statistik dasar kunjungan website.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Buat pelanggan mudah menemukanmu</h5>
+                                <p>Integrasi Google Maps langsung di website.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing-item-button">
+                    <a href="./harga/index.html" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="pricing-item">
+                <div class="pricing-item-content">
+                    <h1>Online Store - <span>Free 10 Halaman</span></h1>
+                    <h3>Rp.2.000.000,00</h3>
+                    <h5>Perpanjangan Rp.800.000,00/tahun</h5>
+                    <ul>
+                        <li>
+                            <div class="point">
+                                <h5>Jual lebih efektif </h5>
+                                <p>Tampilkan produkmu dengan desain yang memikat.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Sampaikan informasi lengkap tanpa bertele-tele</h5>
+                                <p>Deskripsi produk yang jelas dan menarik.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Pastikan semua pengunjung nyaman berbelanja</h5>
+                                <p>Desain responsif di semua perangkat.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Pantau kunjungan dengan mudah</h5>
+                                <p>statistik dasar kunjungan website.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="point">
+                                <h5>Fokus jualan, kami urus teknisnya</h5>
+                                <p>Domain .com & hosting 1 tahun sudah termasuk.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing-item-button">
+                    <a href="./harga/index.html" class="btn">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h1>Mulai Perubahan Besar, Hari Ini!</h1>
+            <p>Punya pertanyaan? Atau langsung ingin mulai proyek? Kami siap bantu.</p>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <div class="nama-email">
+                    <input type="text" placeholder="Nama">
+                    <input type="email" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Bidang Usaha">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Levreweb</h3>
+                <p>Efficient, affordable web development that doesn't compromise on quality.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#services">Layanan Kami</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Paket</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: levreweb@gmail.com</p>
+                <p>Phone: +62 819 4410 4536</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Levreweb. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="whatsapp-cta">
+        <a href="https://wa.me/6281944104536" target="_blank">
+            <img src="./images/WhatsApp.svg.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
