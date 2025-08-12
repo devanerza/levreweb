@@ -107,16 +107,4 @@ function prevService() {
 setInterval(nextService, 5000);
 
 
-// Portfolio section
-let images = [
-    "./images/swiftline.png",
-    "./images/urbanbite.png"
-];
-let portfolioItems = document.querySelectorAll('.portfolio-item');
-
-portfolioItems.forEach(element => {
-    for (let i = 0; i < images.length; i++) {
-        element.style.backgroundImage = "url('" + images[i] + "')";
-    }
-});
 
