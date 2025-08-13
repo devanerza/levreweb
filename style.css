@@ -732,93 +732,112 @@ header {
 
 /* Contact */
 .contact {
-    padding: 2rem;
+    padding: 2rem 68px;
     position: relative;
     max-width: 100%;
-    background-color: #f7f7f7;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    background-color: #fff;
 }
 
-.contact-text {
-    position: relative;
-    z-index: 1000;
-    max-width: 700px;
-    padding: 60px 0;
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact .container .contact-text {
+    color: #3F3D56;
+}
+
+.contact .container .contact-text h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.contact .container .contact-text p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.contact .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
 }
 
-.contact-text h1 {
-    font-size: 40px;
-    color: #3F3D56;
-    margin: 0;
-    padding-right: 150px;
+.contact .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;  
+    margin-top: 2rem;
+    padding-right: 1.5rem;
 }
 
-.contact-text p {
-    font-size: 15px;
-    color: #3F3D56;
-    margin-bottom: 20px;
-    width: 70%;
+.contact .contact-form .w-100 {
+    grid-column: span 2;
 }
 
-.contact-form {
-    position: relative;
-    z-index: 1000;
-    max-width: 700px;
-    padding: 60px 0;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form form .nama-email {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 408px;
-}
-
-.contact-form form input {
-    width: 387px;
+.contact .contact-input {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-.contact-form form textarea {
-    width: 387px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contact .contact-input:focus {
+    outline: none;
+    border-color: #FF8563;
+}
+
+.contact .contact-input::placeholder {
+    color: #ccc;
+}
+
+.contact .contact-input:hover {
+    border-color: #FF8563;
+}
+
+.contact textarea {
+    width:100%;
+    height: 150px;
     resize: none;
-}
-
-.contact-form form .nama-email input {
-    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
-.contact-form form button {
+.contact textarea::placeholder {
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+}
+
+.contact .btn {
+    width: 100%;
     border-radius: 30px;
     background-color: #FF8563;
-    color: #fff;
-    cursor: pointer;
+    color: #3F3D56;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
 }
 
-.contact-form form button:hover {
+.contact .btn:hover {
     background-color: #3F3D56;
     color: #FF8563;
+    transition: all 0.3s ease;
 }
+
 
 /* Footer */
 .footer {
@@ -1012,17 +1031,7 @@ header {
     }
 
     .hero-image {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        z-index: -1;
-    }
-
-    .hero-image img {
-        height: 230px;
-        opacity: 0.5;
+        display: none;
     }
 
     .hero-content {
@@ -1164,27 +1173,22 @@ header {
     }
 
     .contact {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .contact .container {
         flex-direction: column;
         align-items: center;
-    }
-
-    .contact-text {
-        margin-left: 0;
-        padding: 0;
-    }
-
-    .contact-text h1 {
-        font-size: 22px;
-    }
-
-    .contact-text p {
-        font-size: 14px;
-        width: 100%;
     }
 }
 
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }   
+
     nav {
         background-color:  #3F3D56;
         color: #FF8563;
@@ -1266,17 +1270,17 @@ header {
 
     .hero-image {
         display: none;
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-        z-index: -1;
+        position: relative;
     }
 
     .hero-image img {
-        height: 230px;
-        opacity: 0.5;
+        position: absolute;
+        top: 100px;
+        left: -100px;
+        width: fit-content;
+        height: 200px;
+        opacity: 0.3;
+
     }
 
     .hero-content {
@@ -1314,8 +1318,13 @@ header {
 
 
     .services .service-container {
-        flex-direction: column;
+        flex-direction: column;;
         gap: 0;
+    }
+
+    .services .service-container .service-carousel {
+        display: flex;
+        justify-content: center;
     }
 
     .services .service-container .service {
@@ -1359,7 +1368,7 @@ header {
     }
 
     .services .service-container .service.active {
-        width: 320px;
+        width: 300px;
         height: auto;
         padding: 30px;
         flex-direction: column;
@@ -1384,16 +1393,22 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        padding-top: 2rem;
     }
 
     .portfolio .portfolio-item {
-        width: 400px;
+        width: 270px;
         height: auto;
     }
 
     .portfolio .img {
         width: 100%;
         height: auto;
+    }
+
+    .portfolio .portfolio-item a {
+        font-size: 10px;
     }
 
     .workflow .container {
@@ -1418,24 +1433,18 @@ header {
     }
 
     .contact {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .contact br {
+        display: none;
+    }
+
+    .contact .container {
         flex-direction: column;
         align-items: center;
     }
-
-    .contact-text {
-        margin-left: 0;
-        padding: 0;
-    }
-
-    .contact-text h1 {
-        font-size: 22px;
-    }
-
-    .contact-text p {
-        font-size: 14px;
-        width: 100%;
-    }
-
 
     .footer-content {
         flex-direction: column;
