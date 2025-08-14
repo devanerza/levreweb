@@ -338,6 +338,20 @@ header {
     width: 400px;
 }
 
+.about .elements {
+    display: none;
+}
+
+.about .elements.elm-1 {
+    top: 0;
+    left: 0;
+}
+
+.about .elements.elm-2 {
+    bottom: 0;
+    right: 0;
+}
+
 /* Services */
 .services {
     background-color: #3F3D56;
@@ -1049,6 +1063,10 @@ header {
         padding: 30px;
     }
 
+    .about {
+        overflow: hidden;
+    }
+
     .about .about-content {
         margin-left: 0;
         padding: 0;
@@ -1065,6 +1083,41 @@ header {
 
     .about .about-image {
         display: none
+    }
+
+    .about .elements {
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: #FF8563;
+        z-index: -100;
+        opacity: 0.8;
+        box-shadow: 0 5px 15px rgba(255,255,255,0.5);
+    }
+
+    .about .elements.elm-1 {
+        position: absolute;
+        top: -130px;
+        left: -80px;
+    }
+
+    .about .elements.elm-1:hover {
+        box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+
+    .about .elements.elm-2 {
+        position: absolute;
+        bottom: -170px;
+        right: -170px;
+    }
+
+    .about .elements.elm-2:hover {
+        box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        transform: scale(1.1);
+        transition: all 0.3s ease;
     }
 
 
@@ -1265,7 +1318,7 @@ header {
         justify-content: center;
         height: 75vh;
         position: relative;
-        margin-top: 8rem;
+        margin-top: 10rem;
     }
 
     .hero-content {
@@ -1285,8 +1338,8 @@ header {
         display: block;
         order: 2;
         position: absolute;
-        top: 50%;
-        left: 230px;
+        top: 200px;
+        left: 280px;
         transform: translate(-50%, -50%);
         opacity: 0.4;
     }
