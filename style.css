@@ -1260,6 +1260,17 @@ header {
         text-align: center;
     }
 
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+        position: relative;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
     .hero h1 {
         font-size: 22px;
     }
@@ -1268,19 +1279,18 @@ header {
         font-size: 14px;
     }
 
-    .hero-image {
-        display: none;
-        position: relative;
+    .hero .hero-image {
+        display: block;
+        order: 2;
+        position: absolute;
+        top: 50%;
+        left: 230px;
+        transform: translate(-50%, -50%);
+        opacity: 0.4;
     }
 
-    .hero-image img {
-        position: absolute;
-        top: 100px;
-        left: -100px;
-        width: fit-content;
-        height: 200px;
-        opacity: 0.3;
-
+    .hero .hero-image img {
+        width: 200px;
     }
 
     .hero-content {
