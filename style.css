@@ -1263,20 +1263,22 @@ header {
     .hero {
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
+        height: 75vh;
         position: relative;
+        margin-top: 5rem;
     }
 
     .hero-content {
         order: 1;
+        height: 100%;
     }
 
     .hero h1 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .hero p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .hero .hero-image {
@@ -1308,6 +1310,10 @@ header {
         padding: 30px;
     }
 
+    .about {
+        position: relative;
+    }
+
     .about .about-content {
         margin-left: 0;
         padding: 0;
@@ -1323,7 +1329,20 @@ header {
     }
 
     .about .about-image {
-        display: none
+        display: block;
+        position: absolute;
+        width: 200px;
+        top: 50%;
+        left: 180px;
+        transform: translate(-50%, -50%);
+        opacity: 0.4;
+        z-index: -1;
+        padding: 0;
+    }
+
+    .about .about-image img {
+        display: block;
+        width: 200px;
     }
 
 
