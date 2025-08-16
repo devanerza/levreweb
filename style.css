@@ -786,7 +786,7 @@ header {
     column-gap: 2rem;
     row-gap: 1rem;  
     margin-top: 2rem;
-    padding-right: 1.5rem;
+    padding-right: 0.7rem;
 }
 
 .contact .contact-form .w-100 {
@@ -799,6 +799,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 1rem;
+    margin-right: 90px;
 }
 
 .contact .contact-input:focus {
@@ -829,6 +830,7 @@ header {
 }
 
 .contact .contact-button {
+    grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
