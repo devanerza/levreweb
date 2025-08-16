@@ -822,6 +822,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact textarea::placeholder {
