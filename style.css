@@ -314,7 +314,7 @@ header {
     padding-left: 25px;
 }
 
-.about-content h1 {
+.about-content h2 {
     font-size: 2rem;
     color: #3F3D56;
 }
@@ -414,7 +414,7 @@ header {
     margin-bottom: 20px;
 }
 
-.service-text h1 {
+.service-text h2 {
     font-size: 2rem;
     color: #3F3D56;
     margin-bottom: 20px;
@@ -473,7 +473,7 @@ header {
     text-align: center;
 }
 
-.portfolio h1 {
+.portfolio h2 {
     font-size: 2rem;
     color: #3F3D56;
     margin: 0;
@@ -503,7 +503,7 @@ header {
     border-radius: 10px;
 }
 
-.portfolio .container .portfolio-item h1 {
+.portfolio .container .portfolio-item h2 {
     font-size: 18px;
     color: #3F3D56;
     margin: 0;
@@ -549,7 +549,7 @@ header {
     text-align: center;
 }
 
-.workflow h1 {
+.workflow h2 {
     font-size: 2rem;
     color: #3F3D56;
     margin: 0;
@@ -590,7 +590,7 @@ header {
     align-items: center;
 }
 
-.workflow .container .workflow-item h1 {
+.workflow .container .workflow-item h2 {
     font-size: 2rem;
     color: #3F3D56;
     margin: 0;
@@ -618,7 +618,7 @@ header {
     text-align: center;
 }
 
-.pricing h1 {
+.pricing h2 {
     font-size: 2rem;
     color: #FF8563;
     margin: 0;
@@ -663,7 +663,7 @@ header {
     width: 100%;
 }
 
-.pricing .container .pricing-item h1 {
+.pricing .container .pricing-item h2 {
     font-size: 1rem;
     color: #000;
     margin: 0;
@@ -762,7 +762,7 @@ header {
     color: #3F3D56;
 }
 
-.contact .container .contact-text h1 {
+.contact .container .contact-text h2 {
     font-size: 35px;
     margin-bottom: 10px;
 }
@@ -1151,7 +1151,7 @@ header {
         margin-bottom: 20px;
     }
 
-    .services .service-container .service-text h1 {
+    .services .service-container .service-text h2 {
         font-size: 22px;
         margin: 0;
         margin-bottom: 10px;
@@ -1375,7 +1375,7 @@ header {
         padding: 0;
     }
 
-    .about .about-content h1 {
+    .about .about-content h2 {
         font-size: 22px;
     }
 
@@ -1434,7 +1434,7 @@ header {
         margin-bottom: 20px;
     }
 
-    .services .service-container .service-text h1 {
+    .services .service-container .service-text h2 {
         font-size: 22px;
         margin: 0;
         margin-bottom: 10px;

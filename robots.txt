@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://levreweb.com/sitemap.xml

@@ -231,7 +231,7 @@ header {
     text-align: center;
 }
 
-.portfolio h1 {
+.portfolio h2 {
     font-size: 2rem;
     color: #3F3D56;
     margin: 0;
@@ -261,7 +261,7 @@ header {
     border-radius: 10px;
 }
 
-.portfolio .container .portfolio-item h1 {
+.portfolio .container .portfolio-item h2 {
     font-size: 18px;
     color: #3F3D56;
     margin: 0;
@@ -316,7 +316,7 @@ header {
     color: #3F3D56;
 }
 
-.contact .container .contact-text h1 {
+.contact .container .contact-text h2 {
     font-size: 35px;
     margin-bottom: 10px;
 }
