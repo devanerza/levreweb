@@ -780,6 +780,10 @@ header {
         align-items: center;
     }
 
+    .contact .contact-input {
+        margin-right: 0;
+    }
+
     .contact br {
         display: none;
     }
