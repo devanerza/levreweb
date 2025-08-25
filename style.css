@@ -1531,6 +1531,10 @@ header {
         align-items: center;
     }
 
+    .contact .contact-input {
+        margin-right: 0;
+    }
+
     .footer-content {
         flex-direction: column;
         gap: 20px;
